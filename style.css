@@ -94,6 +94,7 @@ nav i {
     display: none;
 }
 
+
 .main-button {
     width: fit-content;
     padding: 8px 16px;
@@ -502,6 +503,9 @@ footer {
         align-items: center;
     }
 
+    .image-card figure img {
+        aspect-ratio: 1/1;
+    }
     
     .hero-background .content{
         margin-top: 48px;

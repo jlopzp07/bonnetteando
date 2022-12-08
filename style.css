@@ -503,8 +503,18 @@ footer {
         align-items: center;
     }
 
-    .image-card figure img {
-        aspect-ratio: 1/1;
+    @supports not (aspect-ratio: 1 / 1) {
+        .image-card::before {
+            float: left;
+            padding-top: 100%;
+            content: '';
+        }
+
+        .image-card::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
     }
     
     .hero-background .content{

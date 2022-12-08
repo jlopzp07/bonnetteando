@@ -179,8 +179,8 @@ nav i {
 
 .trips {
     display: grid;
-    row-gap: 56px;
 }
+
 
 .trips h2 {
     text-align: right;
@@ -448,7 +448,7 @@ footer {
     .image-card {
         height: fit-content;
     }
-    
+
     nav ul {
         display: none;
     } 

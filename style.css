@@ -166,11 +166,11 @@ nav i {
     -o-transform: translateY(50px);
 }
 
-.image-card figure {
+.image-card {
     overflow: hidden;
 }
 
-.image-card figure img {
+.image-card img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -503,13 +503,6 @@ footer {
         align-items: center;
     }
 
-    @supports not (aspect-ratio: 1 / 1) {
-        .image-card figure img {
-            width: 100%;
-            height: auto;
-        }
-    }
-    
     .hero-background .content{
         margin-top: 48px;
     }

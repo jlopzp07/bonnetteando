@@ -439,6 +439,12 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    @supports not ((object-fit: cover) or (aspect-ratio: 1 / 1)) {
+        .image-card {
+            height: fit-content;
+        }
+    }
+
     nav ul {
         display: none;
     } 

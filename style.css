@@ -445,6 +445,10 @@ footer {
         }
     }
 
+    .image-card {
+        height: fit-content;
+    }
+    
     nav ul {
         display: none;
     } 

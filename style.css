@@ -626,6 +626,20 @@ footer {
     margin: 32px auto;
 }
 
+.journey-trips .trip {
+    display: flex;
+    flex-direction: column;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .journey-trips .image-card {
     padding: 1.2rem;
+}
+
+.journey-trips .trip .image-card-content h2,
+.journey-trips .trip .image-card-content p {
+    margin-bottom: 32px;   
 }

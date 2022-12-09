@@ -573,3 +573,35 @@ footer {
         padding: 16px;
     }
 }
+
+
+/* Journey page styles */
+
+.journey .container {
+    width: 100%;
+}
+
+.journey .container header {
+    width: 100%;
+    background-color: var(--background-Container-Dark);
+}
+
+.journey .container nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px 0;    
+}
+
+.journey .container .logo h3,
+.journey .container .logo p,
+.journey .container i {
+    color: var(--font-Subtle);
+}
+
+.journey-background {
+    width: 100%;
+    background-image: url('./assets/images/World\ Map\ -\ Nicole.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+}

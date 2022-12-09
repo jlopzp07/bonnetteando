@@ -599,9 +599,33 @@ footer {
 }
 
 .journey-background {
+    position: relative;
     width: 100%;
     background-image: url('./assets/images/World\ Map\ -\ Nicole.png');
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 16 / 9;
+}
+
+.journey-background .journey-container {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 4px 8px;
+    background-color: var(--background-Container);
+}
+
+.journey-background .journey-container h2 {
+    font-size: 1.2rem;
+}
+
+.journey-trips {
+    width: 90%;
+    margin: 32px auto;
+}
+
+.journey-trips .image-card {
+    padding: 1.2rem;
 }

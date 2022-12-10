@@ -607,21 +607,15 @@ footer {
     aspect-ratio: 16 / 9;
 }
 
-.journey-background .journey-container {
-    position: absolute;
-    left: 16px;
-    bottom: 16px;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 4px 8px;
-    background-color: var(--background-Container);
-}
 
-.journey-background .journey-container h2 {
-    font-size: 1.2rem;
+.journey-trips h1 {
+    font-size: 3.2rem;
 }
 
 .journey-trips {
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
     width: 90%;
     margin: 32px auto;
 }
@@ -633,6 +627,10 @@ footer {
     row-gap: 40px;
     justify-content: space-between;
     align-items: center;
+}
+
+.journey-trips .trip h2 {
+    font-size: 1.8rem;
 }
 
 .journey-trips .image-card {

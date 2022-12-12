@@ -120,6 +120,31 @@ nav i {
     color: var(--font-Primary);
 }
 
+.main-button-white {
+    width: fit-content;
+    padding: 8px 16px;
+    font-size: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--background-Main);
+    color: var(--font-Primary);
+    border: 2px solid var(--background-Main);
+}
+
+.main-button-white a {
+    font-family: 'Oswald', sans-serif;
+    color: var(--font-Primary);
+}
+
+.main-button-white:hover {
+    border: 2px solid var(--background-Main);
+    background-color: transparent;
+    color: var(--background-Main);
+}
+
+.main-button-white:hover a {
+    color: var(--background-Main);
+}
+
 .hero-background::before {
     content: '';
     width: 100%;
@@ -367,6 +392,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding: 16px 0 0;
 }
 
 .footer-content .logo h3,
@@ -378,6 +404,7 @@ footer {
     display: inherit;
     flex-direction: column;
     align-items: center;
+    row-gap: 16px;
 }
 
 .footer-center p {
@@ -391,9 +418,18 @@ footer {
     text-decoration: underline;
 }
 
+.footer-center img {
+    width: 32px;
+}
+
 .social-media {
     display: inherit;
     column-gap: 32px;
+}
+
+.nav-menu {
+    width: 0;
+    height: 0;
 }
 
 @media screen and (max-width: 425px) {
@@ -410,9 +446,6 @@ footer {
         margin-right: 0;
     }
 
-    .main-button {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 540px) {
@@ -434,8 +467,14 @@ footer {
     .hero-images .image-card p {
         font-size: 1.4rem;
     }
+    
+    .main-button {
+        width: 100%;
+    }
 
 }
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -577,30 +616,36 @@ footer {
 
 /* Journey page styles */
 
-.journey .container {
-    width: 100%;
-}
 
-.journey .container header {
+.journey header {
     width: 100%;
     background-color: var(--background-Container-Dark);
 }
 
-.journey .container nav {
+.journey nav {
     width: 90%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 16px 0;    
+    padding: 16px 0;
 }
 
-.journey .container .logo h3,
-.journey .container .logo p,
-.journey .container i {
+.journey .logo h3,
+.journey .logo p, 
+.journey i {
+    color: var(--font-Subtle);
+}
+
+.journey header ul li a {
     color: var(--font-Subtle);
 }
 
 .journey-background {
-    position: relative;
-    width: 100%;
+    background-color: var(--background-Container-Dark);
+}
+
+.journey-container {
+    max-width: 1280px;
+    margin: 0 auto;
     background-image: url('./assets/images/World\ Map\ -\ Nicole.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -615,8 +660,9 @@ footer {
 .journey-trips {
     display: flex;
     flex-direction: column;
-    row-gap: 56px;
+    max-width: 1280px;
     width: 90%;
+    row-gap: 56px;
     margin: 32px auto;
 }
 
@@ -625,12 +671,13 @@ footer {
     flex-direction: column;
     column-gap: 40px;
     row-gap: 40px;
+    padding: 16px 0;
     justify-content: space-between;
     align-items: center;
 }
 
 .journey-trips .trip h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .journey-trips .image-card {
@@ -640,4 +687,46 @@ footer {
 .journey-trips .trip .image-card-content h2,
 .journey-trips .trip .image-card-content p {
     margin-bottom: 32px;   
+}
+
+/* Journey media queries styles */
+
+@media screen and (min-width: 768px) {
+
+    .journey nav {
+        width: 100%;
+    }
+
+    .journey-trips .trip {
+        flex-direction: row;
+        column-gap: 32px;
+        align-items: stretch;
+    }
+
+    .journey-trips .trip .image-card {
+        flex-shrink: 1;
+    }
+
+    .journey-trips .trip .image-card-content {
+        display: inherit;
+        flex-direction: column;
+        flex-shrink: 2;
+    }
+ 
+    .journey-trips {
+        width: 100%;
+        margin: 85px auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .journey-trips .trip {
+        flex-direction: row;
+        column-gap: 72px;
+    }
+
+    .journey-trips .trip h2 {
+        font-size: 2.5rem;
+    }
 }

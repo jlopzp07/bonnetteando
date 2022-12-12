@@ -467,7 +467,7 @@ footer {
     .hero-images .image-card p {
         font-size: 1.4rem;
     }
-    
+
     .main-button {
         width: 100%;
     }
@@ -729,4 +729,60 @@ footer {
     .journey-trips .trip h2 {
         font-size: 2.5rem;
     }
+}
+
+/* Collage styles */
+
+.collage-images-container {
+    margin: 56px 0;
+}
+
+.collage-images-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px ,1fr));
+    gap: 16px;
+    margin-top: 24px;
+    justify-items: center;
+    align-items: center;
+}
+
+.collage-images-container h1 {
+    font-size: 3.2rem;
+}
+
+.collage-images-container .collage-images-grid .image-card {
+    padding: 16px;
+}
+
+.collage-images-container .collage-images-grid .image-card::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: var(--tape-1);
+    box-shadow: 0px 2px 2px rgb(100, 98, 97);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: 1;
+}
+
+.collage-images-container .collage-images-grid .image-card::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    background-color: var(--tape-1);
+    box-shadow: 0px 2px 2px rgba(74, 71, 69, 0.418);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    z-index: 0;
 }

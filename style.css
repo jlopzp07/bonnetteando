@@ -519,6 +519,7 @@ footer {
         -moz-transition: 0.2s;
         -ms-transition: 0.2s;
         -o-transition: 0.2s;
+        z-index: 999;
     }
 
     .nav-menu-container {
@@ -640,17 +641,17 @@ footer {
     margin: 3.2rem auto 0;
 }
 
-.journey .logo h3,
-.journey .logo p,
-.journey i {
+.journey nav .logo h3,
+.journey nav .logo p,
+.journey nav i {
     color: var(--font-Subtle);
 }
 
-.journey header ul li a {
+.journey header nav ul li a {
     color: var(--font-Subtle);
 }
 
-.journey header ul li .active {
+.journey header nav ul li .active {
     border-bottom: 1px solid var(--font-Subtle);
     font-style: italic;
 }
@@ -710,7 +711,7 @@ footer {
 @media screen and (min-width: 768px) {
 
     .journey nav {
-        width: 100%;
+        width: 90%;
     }
 
     .journey-trips .trip {
@@ -730,7 +731,7 @@ footer {
     }
 
     .journey-trips {
-        width: 100%;
+        width: 90%;
         margin: 85px auto;
     }
 }
@@ -815,7 +816,7 @@ footer {
     position: relative;
 }
 
-.collage-images-container .collage-images-grid .image-card:hover picture::before {
+/* .collage-images-container .collage-images-grid .image-card:hover picture::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -823,7 +824,7 @@ footer {
     background-color: rgba(34, 32, 30, 0.93);
     ;
     backdrop-filter: blur(5px);
-}
+} */
 
 /* Collage media queries */
 

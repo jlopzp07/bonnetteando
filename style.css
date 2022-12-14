@@ -900,7 +900,7 @@ footer {
 
 .header .header-cover-1 {
     width: 100%;
-    min-height: 160px;
+    min-height: 260px;
     background-image: url('./assets/images/NY.JPG');
     background-repeat: no-repeat;
     background-size: cover;
@@ -909,7 +909,7 @@ footer {
 
 .header .header-cover-2 {
     width: 100%;
-    min-height: 160px;
+    min-height: 260px;
     background-image: url('./assets/images/NZ.JPG');
     background-repeat: no-repeat;
     background-size: cover;
@@ -918,7 +918,7 @@ footer {
 
 .header .header-cover-3 {
     width: 100%;
-    min-height: 160px;
+    min-height: 260px;
     background-image: url('./assets/images/AS.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -1037,11 +1037,6 @@ footer {
 /* Details media queries */
 
 @media screen and (min-width: 768px) {
-    .header .header-cover-1,
-    .header .header-cover-2,
-    .header .header-cover-3 {
-        min-height: 260px;
-    }
 
     .header .header-details {
         height: 190px;

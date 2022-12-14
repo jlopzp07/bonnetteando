@@ -39,6 +39,7 @@ html {
     margin: auto;
 }
 
+
 h1 {
     font-size: 4.0rem;
     font-family: 'Oswald', sans-serif;
@@ -83,10 +84,16 @@ ul {
 
 li {
     font-size: 1.6rem;
+    padding: 2px 0;
 }
 
 ul li a {
     margin: 0 20px 0;
+}
+
+ul li .active {
+    border-bottom: 1px solid var(--border-Primary);
+    font-style: italic;
 }
 
 nav i {
@@ -104,6 +111,7 @@ nav i {
     background-color: var(--background-Container-Dark);
     color: var(--font-Subtle);
     border: 2px solid var(--border-Primary);
+    cursor: pointer;
 }
 
 .main-button a {
@@ -129,6 +137,7 @@ nav i {
     background-color: var(--background-Main);
     color: var(--font-Primary);
     border: 2px solid var(--background-Main);
+    cursor: pointer;
 }
 
 .main-button-white a {
@@ -628,8 +637,7 @@ footer {
 .journey nav {
     width: 90%;
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 16px 0;
+    margin: 3.2rem auto 0;
 }
 
 .journey .logo h3,
@@ -640,6 +648,11 @@ footer {
 
 .journey header ul li a {
     color: var(--font-Subtle);
+}
+
+.journey header ul li .active {
+    border-bottom: 1px solid var(--font-Subtle);
+    font-style: italic;
 }
 
 .journey-background {
@@ -807,7 +820,8 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(34, 32, 30, 0.93);;
+    background-color: rgba(34, 32, 30, 0.93);
+    ;
     backdrop-filter: blur(5px);
 }
 
@@ -833,6 +847,7 @@ footer {
     .collage-images-grid {
         gap: 56px;
     }
+
     .collage-images-container .collage-images-grid .image-card::before {
         width: 46px;
         height: 46px;
@@ -841,7 +856,7 @@ footer {
         -moz-transform: translateY(-28px);
         -ms-transform: translateY(-28px);
         -o-transform: translateY(-28px);
-}
+    }
 
     .collage-images-container .collage-images-grid .image-card::after {
         width: 65px;
@@ -851,5 +866,223 @@ footer {
         -moz-transform: translateY(-38px);
         -ms-transform: translateY(-38px);
         -o-transform: translateY(-38px);
+    }
 }
+
+/* Details styles */
+
+.details {
+    margin: 56px 0;
+}
+
+.details .header .outline-button {
+    width: fit-content;
+    height: fit-content;
+}
+
+.details .header .outline-button a {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-bottom: 16px;
+}
+
+.details .header .outline-button h3,
+.details .header .outline-button i {
+    font-size: 1.6rem;
+}
+
+.details .header .outline-button i {
+    font-size: 2rem;
+}
+
+.header .header-cover-1 {
+    width: 100%;
+    min-height: 160px;
+    background-image: url('./assets/images/NY.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .header-cover-2 {
+    width: 100%;
+    min-height: 160px;
+    background-image: url('./assets/images/NZ.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .header-cover-3 {
+    width: 100%;
+    min-height: 160px;
+    background-image: url('./assets/images/AS.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .header-details {
+    max-width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin: 0 auto;
+    transform: translateY(-50px);
+    background-color: var(--background-Container);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+}
+
+.header .header-details .header-details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .header-details .header-details-content img {
+    width: 20px;
+}
+
+.header .header-details .header-details-content span {
+    font-size: 1rem;
+}
+
+.header .header-details .header-details-content h3 {
+    font-size: 1.4rem;
+}
+
+.detail-container {
+    height: fit-content;
+    position: relative;
+    margin: 32px 0;
+    overflow: hidden;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    margin: 56px 0;
+}
+
+.activities .left-side {
+    display: inherit;
+    flex-direction: column;
+    order: 2;
+    row-gap: 24px;
+}
+
+.activities .left-side h2 {
+    margin: 24px 0;
+}
+
+.activities .right-side {
+    order: 1;
+}
+
+.activities .right-side picture img {
+    width: 100%;
+    opacity: 80%;
+}
+
+.activities-container {
+    display: flex;
+    column-gap: 16px;
+    align-items: flex-start;
+}
+
+.activities-container .activities-content h3 {
+    margin-bottom: 16px;
+}
+
+.activities-icon {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 8px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: 2px solid var(--border-Primary);
+}
+
+.activities-icon .activities-icon-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: var(--border-Primary);
+}
+
+/* Details media queries */
+
+@media screen and (min-width: 768px) {
+    .header .header-cover-1,
+    .header .header-cover-2,
+    .header .header-cover-3 {
+        min-height: 260px;
+    }
+
+    .header .header-details {
+        height: 190px;
+        padding: 0 56px;
+    }
+
+    .header .header-details .header-details-content img {
+        width: 56px;
+    }
+
+    .header .header-details .header-details-content span {
+        font-size: 1.8rem;
+    }
+
+    .header .header-details .header-details-content h3 {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header .header-cover-1,
+    .header .header-cover-2,
+    .header .header-cover-3 {
+        min-height: 360px;
+    }
+
+    .header .header-details {
+        width: 640px;
+        height: 220px;
+        padding: 0 56px;
+    }
+
+    .activities {
+        flex-direction: row;
+    }
+
+    .activities .left-side {
+        order: 1;
+    }
+
+    .activities .right-side {
+        order: 2;
+    }
 }

@@ -421,6 +421,7 @@ footer {
 .footer-center p {
     color: var(--font-Subtle);
     font-size: 1.2rem;
+    text-align: center;
 }
 
 
